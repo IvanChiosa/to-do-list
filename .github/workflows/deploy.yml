@@ -1,4 +1,4 @@
-name: "Deploy app"
+name: "Deploy to-do-list"
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: "Build Frontend"
         working-directory: frontend
